@@ -10,8 +10,7 @@ const boxesRef = document.querySelector('#boxes');
 
 createBoxBtnRef.addEventListener('click', () => {
   const template = createBoxes(amountOfBoxesRef.value);
-  boxesRef.innerHTML = '';
-  boxesRef.insertAdjacentHTML('afterbegin', template);
+  boxesRef.insertAdjacentHTML('beforeend', template);
 });
 
 destroyBoxBtnRef.addEventListener('click', () => {
