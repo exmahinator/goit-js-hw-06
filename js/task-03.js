@@ -14,14 +14,11 @@ const images = [
 ];
 
 const galleryRef = document.querySelector('.gallery');
-console.log(galleryRef);
 
 const elements = images
   .map(({ url, alt }) => {
     return `<img alt='${alt}' src='${url}' class='gallery__image'></img>`;
   })
   .join('');
-
-console.log(elements);
 
 galleryRef.insertAdjacentHTML('afterbegin', elements);

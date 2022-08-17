@@ -18,7 +18,4 @@ ingredients.forEach(ingredient => {
 //   elements.push(recipeItem);
 // }
 
-console.log(elements);
-
 recipeRef.append(...elements);
-console.log(recipeRef);
